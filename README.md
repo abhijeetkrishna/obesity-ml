@@ -25,3 +25,10 @@ TUE : How much time do you use technological devices such as cell phone, videoga
 CALC : How often do you drink alcohol?
 MTRANS : Which transportation do you usually use?
 Obesity_level (Target Column) : Obesity level
+
+## Containerization and Deployment
+To deploy the app, run the following command:
+```bash
+docker build -t obesity-test .
+docker run -it --rm -p 9696:9696 obesity-test
+```
